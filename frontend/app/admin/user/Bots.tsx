@@ -8,7 +8,7 @@ import {
     MenubarTrigger,
   } from "@/components/ui/menubar"
   
-
+  const url = process.env.NEXT_PUBLIC_BASE_URL;
 export default function Bots() {
     const [loading, setLoading] = useState(false);
     const [responses, setResponses] = useState<{ action: any; status: any; message: any; }[]>([]);
@@ -19,7 +19,7 @@ export default function Bots() {
 
     const RunBot = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/rpa-bot/portfolio', {
+        const res = await fetch(`${url}/rpa-bot/portfolio`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export default function Bots() {
 
     const RunFortnightlyBot = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/rpa-bot/fortnightly', {
+        const res = await fetch(`${url}/rpa-bot/fortnightly`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export default function Bots() {
 
     const RunStockScraperBot = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/rpa-bot/stockscraper', {
+        const res = await fetch(`${url}/rpa-bot/stockscraper`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export default function Bots() {
     };
     
     const ShowHistory = async () => {
-        const res = await fetch('http://localhost:8000/rpa-bot/history', {
+        const res = await fetch(`${url}/rpa-bot/history`, {
             method: 'GET',
         });
         handleResponse('History', res);
@@ -64,7 +64,7 @@ export default function Bots() {
 //files
     const AddAmc = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/amc', {
+        const res = await fetch(`${url}/data/amc`, {
             method: 'POST'
         });
         handleResponse('Amc Data', res);
@@ -73,7 +73,7 @@ export default function Bots() {
 
     const AddMf = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/mf', {
+        const res = await fetch(`${url}/data/mf`, {
             method: 'POST'
         });
         handleResponse('Mutualfund Data', res);
@@ -82,7 +82,7 @@ export default function Bots() {
 
     const AddStock = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/stock', {
+        const res = await fetch(`${url}/data/stock`, {
             method: 'POST'
         });
         handleResponse('Stock Data', res);
@@ -91,7 +91,7 @@ export default function Bots() {
 
     const AddFundstock = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/fs', {
+        const res = await fetch(`${url}/data/fs`, {
             method: 'POST'
         });
         handleResponse('FundStock Data', res);
@@ -100,7 +100,7 @@ export default function Bots() {
 
     const Updatestock = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/updatestockdata', {
+        const res = await fetch(`${url}/data/updatestockdata`, {
             method: 'POST'
         });
         handleResponse('Update stock data', res);
@@ -108,7 +108,7 @@ export default function Bots() {
     };
     const Addfortnightly = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/fort', {
+        const res = await fetch(`${url}/data/fort`, {
             method: 'POST'
         });
         handleResponse('Fortnightly Data', res);
@@ -116,7 +116,7 @@ export default function Bots() {
     };
     const AddIndex = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/addindex', {
+        const res = await fetch(`${url}/data/addindex`, {
             method: 'POST'
         });
         handleResponse('Data Science Run', res);
@@ -124,7 +124,7 @@ export default function Bots() {
     };
     const AddIndexStock = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/addindexstock', {
+        const res = await fetch(`${url}/data/addindexstock`, {
             method: 'POST'
         });
         handleResponse('Data Science Run', res);
@@ -132,7 +132,7 @@ export default function Bots() {
     };
     const DeactivateAllFunds = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/data/deactivatefs', {
+        const res = await fetch(`${url}/data/deactivatefs`, {
             method: 'POST'
         });
         handleResponse('Data Science Run', res);
@@ -140,7 +140,7 @@ export default function Bots() {
     };
     const updatemf = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/mf/total', {
+        const res = await fetch(`${url}/mf/total`, {
             method: 'put'
         });
         handleResponse('Data Science Run', res);
@@ -149,7 +149,7 @@ export default function Bots() {
 //ds
     const RunMonthlyBot = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/datasci/run', {
+        const res = await fetch(`${url}/datasci/run`, {
             method: 'POST'
         });
         handleResponse('Data Science Run', res);
@@ -158,7 +158,7 @@ export default function Bots() {
 
     const RunFortnightlyDSBot = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/datasci/fortnightly', {
+        const res = await fetch(`${url}/datasci/fortnightly`, {
             method: 'POST'
         });
         handleResponse('Data Science Run', res);
@@ -166,7 +166,7 @@ export default function Bots() {
     };
     const RunIndiceBot = async () => {
         setLoading(true);
-        const res = await fetch('http://localhost:8000/datasci/run-indices', {
+        const res = await fetch(`${url}/datasci/run-indices`, {
             method: 'POST'
         });
         handleResponse('Data Science Run', res);

@@ -56,6 +56,7 @@ export class FilesService {
   async addAMCtoDb(): Promise<string[]> {
     try {
       const directoryPath = process.env.AMC;
+      console.log(directoryPath);
       const files = await fs.readdir(directoryPath);
       const csvFiles = files.filter(file => file.endsWith('.csv'));
       const results: string[] = [];
