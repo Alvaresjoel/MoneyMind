@@ -1,5 +1,4 @@
 import { Injectable, ExecutionContext, CanActivate,ForbiddenException } from '@nestjs/common';
-import { Reflector } from '@nestjs/core';
 import { JwtService } from '@nestjs/jwt';
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -23,7 +22,6 @@ dotenv.config();
 @Injectable()
 export class AdminRoleGuard implements CanActivate {
   constructor(
-    private reflector: Reflector,
     private jwtService: JwtService
   ) {}
 
