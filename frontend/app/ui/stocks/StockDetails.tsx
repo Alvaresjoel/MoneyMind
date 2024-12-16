@@ -23,9 +23,15 @@ type Fund = {
 
 interface StockDetailsProps {
   stock: {
-    stock_symbol: string;
-    sector: string;
-    market_cap: string;
+    stock_id: string;
+  isin_id: string;
+  stock_symbol: string;
+  stock_name: string;
+  sector: string;
+  market_cap: string | null;
+  current_price: number | null;
+  exchange: string;
+  index: string;
   };
   mfs: Fund[];
 }
