@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-
+const url = process.env.NEXT_PUBLIC_BASE_URL;
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,7 +11,7 @@ const Login = () => {
 
 
     try {
-      const response = await fetch('http://localhost:8000/auth/login', {
+      const response = await fetch(`${url}/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
