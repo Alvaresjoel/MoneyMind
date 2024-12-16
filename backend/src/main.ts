@@ -9,11 +9,18 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // Use environment variables for CORS origin and port
-  const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+  const frontendUrl = 'https://stock-tracker-2-5263.vercel.app/';
   const port = process.env.PORT || 8000;
 
   app.enableCors({
-    origin: frontendUrl,
+    origin: (origin, callback) => {
+      console.log('Request Origin:', origin);
+      if (!origin || origin === frontendUrl) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
