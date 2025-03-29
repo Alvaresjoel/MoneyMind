@@ -2,8 +2,8 @@
 import React from "react";
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import Login from "../app/admin/login";
-import SignUp from "../app/admin/signup";
+import Login from "../app/admin/adlogin/login";
+import SignUp from "../app/admin/adlogin/signup";
 
 beforeEach(() => {
   global.fetch = jest.fn();
