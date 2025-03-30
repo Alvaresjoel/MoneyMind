@@ -28,7 +28,6 @@ export default function LoginPage() {
       // Store user details in sessionStorage
       sessionStorage.setItem("loginToken", await user.getIdToken())
       sessionStorage.setItem("username", user.displayName || "")
-      sessionStorage.setItem("profileImage", user.photoURL || "")
       
       console.log("Login successful")
       router.push("/") // Redirect to main screen
@@ -111,7 +110,7 @@ export default function LoginPage() {
         </CardContent>
         <CardFooter className="flex justify-center">
           <p className="text-sm text-muted-foreground">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <Link href="/user/signup" className="text-accent hover:underline">
               Sign up
             </Link>
