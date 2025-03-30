@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@ag-grid-community/all-modules':
-        specifier: ^27.3.0
+        specifier: 27.3.0
         version: 27.3.0
       '@ag-grid-community/client-side-row-model':
         specifier: ^32.1.0
         version: 32.1.0
       '@ag-grid-community/core':
-        specifier: ^32.1.0
+        specifier: 32.1.0
         version: 32.1.0
       '@ag-grid-community/react':
-        specifier: ^32.1.0
+        specifier: 32.1.0
         version: 32.1.0(@ag-grid-community/core@32.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@emotion/react':
         specifier: ^11.13.0
@@ -51,8 +51,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@types/react@18.3.3)(react@18.3.1)
       ag-grid-community:
-        specifier: ^32.1.0
-        version: 32.1.0
+        specifier: ^32.3.4
+        version: 32.3.4
       ag-grid-react:
         specifier: ^32.1.0
         version: 32.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -87,8 +87,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-icons:
-        specifier: ^5.2.1
-        version: 5.2.1(react@18.3.1)
+        specifier: ^5.5.0
+        version: 5.5.0(react@18.3.1)
       recharts:
         specifier: ^2.12.7
         version: 2.12.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1450,8 +1450,14 @@ packages:
   ag-charts-types@10.1.0:
     resolution: {integrity: sha512-pk9ft8hbgTXJ/thI/SEUR1BoauNplYExpcHh7tMOqVikoDsta1O15TB1ZL4XWnl4TPIzROBmONKsz7d8a2HBuQ==}
 
+  ag-charts-types@10.3.4:
+    resolution: {integrity: sha512-MU+3gvKn1jEyLlMHS0Vu0nHmIQxiVJAnA6ftUatLZvV0c7hOWap4VWghqZ0cVZUJsCdMI59Iuq1u3xquKv4LOQ==}
+
   ag-grid-community@32.1.0:
     resolution: {integrity: sha512-RVvkjRH61nuCXwIqTKQPqNbKR+8cGBKw7S1qmmMXsy0pCBAJaQn4kL3v31hKHxDtV4bPscBXLFKGnKzHuss0GQ==}
+
+  ag-grid-community@32.3.4:
+    resolution: {integrity: sha512-iYQYFapKkqtCml1BvIX/nyNO6SvZYe/Z/1hLa7/7Dpzj2uqABJZIPGgW/ZTOc+/YiM9JYJWMkD7c+5E23GzkAw==}
 
   ag-grid-react@32.1.0:
     resolution: {integrity: sha512-GDbtvU3aicSajWXWxvQio5ZaPqJDx2jzgRBKQf1RF1IVzL+XATDmLFNuMND0+wJ/VW/xUjBFjiq9W1fjXg/DCA==}
@@ -3411,8 +3417,8 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
-  react-icons@5.2.1:
-    resolution: {integrity: sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw==}
+  react-icons@5.5.0:
+    resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
     peerDependencies:
       react: '*'
 
@@ -5624,9 +5630,15 @@ snapshots:
 
   ag-charts-types@10.1.0: {}
 
+  ag-charts-types@10.3.4: {}
+
   ag-grid-community@32.1.0:
     dependencies:
       ag-charts-types: 10.1.0
+
+  ag-grid-community@32.3.4:
+    dependencies:
+      ag-charts-types: 10.3.4
 
   ag-grid-react@32.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -6428,7 +6440,7 @@ snapshots:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.0)
       eslint-plugin-react: 7.35.0(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
@@ -6452,7 +6464,7 @@ snapshots:
       enhanced-resolve: 5.17.1
       eslint: 8.57.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.6
       is-core-module: 2.15.0
@@ -6474,7 +6486,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
@@ -7975,7 +7987,7 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-icons@5.2.1(react@18.3.1):
+  react-icons@5.5.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 

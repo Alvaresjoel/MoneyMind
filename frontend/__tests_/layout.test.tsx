@@ -1,7 +1,7 @@
 // All tests are passing
 import { render, screen } from "@testing-library/react";
 import RootLayout from "../app/layout";
-import Header from "@/app/ui/header";
+import Header from "@/app/ui/sidebar";
 
 describe("RootLayout Component", () => {
   it("renders the Header component", () => {

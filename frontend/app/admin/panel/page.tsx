@@ -1,5 +1,4 @@
 "use client"
-import Userpage from './Userpage'
 import React,{useEffect,useState} from 'react';
 // eslint-disable-next-line import/no-anonymous-default-export, react/display-name
 export default function(){
@@ -26,6 +25,8 @@ export default function(){
         }
     }, []);
     return(
-        <Userpage/>
+        <div>
+            
+        </div>
     );
 }

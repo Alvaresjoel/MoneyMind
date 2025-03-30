@@ -1,6 +1,6 @@
 import React from "react";
 import "@testing-library/jest-dom";
-import Bots from "../app/admin/user/Bots";
+import Bots from "../app/admin/panel/Bots";
 import {
   render,
   screen,
