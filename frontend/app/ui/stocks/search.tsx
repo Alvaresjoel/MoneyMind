@@ -43,7 +43,7 @@ const Search = ({ placeholder, onSearch }: SearchProps) => {
   return (
     <input
       type="text"
-      className="border border-[#38bdf8] rounded text-white p-2 w-1/2"
+      className="border bg-web3 rounded text-white p-2 w-1/2"
       placeholder={placeholder}
       value={query}
       onChange={handleChange}

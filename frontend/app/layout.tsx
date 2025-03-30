@@ -1,24 +1,43 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/app/ui/header";
+import Sidebar from "@/app/ui/sidebar";
+import TopBar from "@/app/ui/topbar"; // Import TopBar
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "MoneyMind: Helps users make smarter investment decisions.",
+  description: "MoneyMind: Helps users make smarter investment decisions.",
+  keywords: "money, investment, finance, stocks, crypto, portfolio, analysis",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-
-
   return (
-    <html lang="en" data-theme="night" >
-      <title>Stock Tracker</title>
-      <body className={`${inter.className} bg-base-300 text-base-content h-screen`} >
-        <Header/>
-        <div className="w-auto bg-base-300" >{children}</div>  
+    <html lang="en" >
+      <head></head>
+      <body className={`${inter.className} text-base-content h-screen flex`}>
+        
+        {/* Sidebar: Fixed on the left */}
+        <Sidebar />
+
+        {/* Main Content Area */}
+        <div className="flex-1 flex flex-col ml-64"> 
+          {/* Top Bar: Positioned at the top */}
+          <TopBar />
+
+          {/* Scrollable Main Content */}
+          <main className="flex-1 p-6 overflow-auto bg-web3">
+            {children}
+          </main>
+        </div>
+
       </body>
     </html>
   );

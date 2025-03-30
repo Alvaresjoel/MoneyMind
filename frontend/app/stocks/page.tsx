@@ -3,7 +3,7 @@ import React, { Suspense } from 'react';
 
 export default function Stocks() {
   return (
-    <div className=" pb-80 pt-12  bg-primary">
+    <div className="">
       <Suspense fallback={<div>Loading...</div>}>
         <StocksList />
       </Suspense>
