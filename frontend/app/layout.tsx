@@ -33,7 +33,7 @@ export default function RootLayout({
           <TopBar />
 
           {/* Scrollable Main Content */}
-          <main className="flex-1 p-6 overflow-auto bg-gray-100">
+          <main className="flex-1 p-6 overflow-auto bg-web3">
             {children}
           </main>
         </div>
