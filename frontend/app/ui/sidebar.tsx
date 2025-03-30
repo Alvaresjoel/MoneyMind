@@ -1,10 +1,10 @@
 'use client';
-
 import React from 'react';
 import Link from 'next/link';
 import { FaTachometerAlt, FaChartLine, FaChartPie, FaClipboardList, FaChartBar, FaCog, FaSignOutAlt } from 'react-icons/fa';
 
 const Sidebar: React.FC = () => {
+
   return (
     <div className="h-screen w-64 bg-web1 shadow-lg p-6 fixed left-0 top-0 flex flex-col justify-between">
 
@@ -24,7 +24,8 @@ const Sidebar: React.FC = () => {
       {/* Settings & Logout */}
       <div>
         <SidebarLink href="/settings" icon={<FaCog />} label="Settings" />
-        <SidebarLink href="/logout" icon={<FaSignOutAlt />} label="Sign Out" />
+        
+      
       </div>
     </div>
   );
