@@ -1,5 +1,6 @@
 import axios from 'axios';
 const url = process.env.NEXT_PUBLIC_BASE_URL;
+// console.log("URL:", url);
 export async function fetchMfs(query: string) {
     try {
         const res = await axios.get(`${url}/overlap/searchmf`, {
