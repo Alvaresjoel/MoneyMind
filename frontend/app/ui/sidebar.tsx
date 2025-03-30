@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaChartLine, FaChartPie, FaClipboardList, FaChartBar, FaCog, FaSignOutAlt} from 'react-icons/fa';
+import { FaTachometerAlt, FaChartLine, FaChartPie, FaClipboardList, FaChartBar, FaCog, FaSignOutAlt } from 'react-icons/fa';
 
 const Sidebar: React.FC = () => {
   return (
@@ -15,11 +15,11 @@ const Sidebar: React.FC = () => {
 
       {/* Navigation Links */}
       <nav className="flex-1">
-        <SidebarLink href="/compare-funds" icon={<FaChartLine />} label="Compare Funds" /> {/* Stock market trend */}
+        <SidebarLink href="/" icon={<FaChartLine />} label="Compare Funds" /> {/* Stock market trend */}
         <SidebarLink href="/indexes" icon={<FaChartPie />} label="Index" /> {/* Pie chart for indices */}
         <SidebarLink href="/mutual-funds" icon={<FaClipboardList />} label="Mutual Fund" /> {/* List representation */}
         <SidebarLink href="/stocks" icon={<FaChartBar />} label="Stocks" /> {/* Stock performance */}
-      </nav>
+        <SidebarLink href="/stocks" icon={<FaTachometerAlt />} label="Dashboard" />      </nav>
 
       {/* Settings & Logout */}
       <div>
