@@ -1,6 +1,6 @@
 // components/OverlapChart.js
 import React from 'react';
-import RadialProgress from '@/app/ui/overlap/radialprogress';
+import RadialProgress from '@/components/overlap/radialprogress';
 
 type Calculation = {
   totalpercentage: number,

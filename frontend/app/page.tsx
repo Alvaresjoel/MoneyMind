@@ -1,8 +1,8 @@
 "use client";
-import OverlapChart from "@/app/ui/overlap/overlapchart";
-import { ComboboxPopover } from "@/app/ui/overlap/inputcbox";
-import HorizontalBarGraph from "./ui/overlap/HorizontalBarGraph";
-import Dashboard from "@/app/ui/overlap/Dashboard";
+import OverlapChart from "@/components/overlap/overlapchart";
+import { ComboboxPopover } from "@/components/overlap/inputcbox";
+import HorizontalBarGraph from "../components/overlap/HorizontalBarGraph";
+import Dashboard from "@/components/overlap/Dashboard";
 
 import { useState } from "react";
 import {fetchOverlapData} from "@/lib/data";

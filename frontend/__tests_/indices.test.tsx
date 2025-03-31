@@ -1,4 +1,4 @@
-import Indices from "../app/ui/index/indices";
+import Indices from "../components/index/indices";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 

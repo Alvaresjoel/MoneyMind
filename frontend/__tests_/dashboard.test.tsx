@@ -1,6 +1,6 @@
 //need changes in type of data
 import { render, screen } from "@testing-library/react";
-import Dashboard from "../app/ui/overlap/Dashboard";
+import Dashboard from "../components/overlap/Dashboard";
 
 const mockData = {
   totalpercentage: 75,

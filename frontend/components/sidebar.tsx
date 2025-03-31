@@ -19,7 +19,7 @@ const Sidebar: React.FC = () => {
         <SidebarLink href="/indexes" icon={<FaChartPie />} label="Index" /> {/* Pie chart for indices */}
         <SidebarLink href="/mutual-funds" icon={<FaClipboardList />} label="Mutual Fund" /> {/* List representation */}
         <SidebarLink href="/stocks" icon={<FaChartBar />} label="Stocks" /> {/* Stock performance */}
-        <SidebarLink href="/stocks" icon={<FaTachometerAlt />} label="Dashboard" />      </nav>
+        <SidebarLink href="/dashboard" icon={<FaTachometerAlt />} label="Dashboard" />      </nav>
 
       {/* Settings & Logout */}
       <div>

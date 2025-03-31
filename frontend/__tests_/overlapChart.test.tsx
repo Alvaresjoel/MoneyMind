@@ -2,7 +2,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import OverlapChart from "../app/ui/overlap/overlapchart";
+import OverlapChart from "../components/overlap/overlapchart";
 
 // Mock the RadialProgress component
 jest.mock("../app/ui/overlap/radialprogress", () => {

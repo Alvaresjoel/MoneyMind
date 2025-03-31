@@ -2,7 +2,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import RadialProgress from "../app/ui/overlap/radialprogress";
+import RadialProgress from "../components/overlap/radialprogress";
 
 describe("RadialProgress", () => {
   it("renders the component with correct percentage", () => {

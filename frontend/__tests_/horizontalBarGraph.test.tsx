@@ -1,7 +1,7 @@
 //All tests are passing
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import HorizontalBarGraph from "../app/ui/overlap/HorizontalBarGraph";
+import HorizontalBarGraph from "../components/overlap/HorizontalBarGraph";
 
 // Mock the recharts library
 jest.mock("recharts", () => ({

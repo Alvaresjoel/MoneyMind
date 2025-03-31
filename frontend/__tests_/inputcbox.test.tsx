@@ -1,4 +1,4 @@
-import { ComboboxPopover } from "../app/ui/overlap/inputcbox";
+import { ComboboxPopover } from "../components/overlap/inputcbox";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 
 describe("ComboboxPopover", () => {

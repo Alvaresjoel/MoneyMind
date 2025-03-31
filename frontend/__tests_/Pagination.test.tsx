@@ -1,7 +1,7 @@
 //need improvement
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Pagination from "../app/ui/pagination";
+import Pagination from "../components/pagination";
 
 describe("Pagination Component", () => {
   test("renders correctly and shows correct buttons", () => {
